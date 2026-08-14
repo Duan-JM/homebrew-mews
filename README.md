@@ -4,7 +4,7 @@ This tap contains unnotarized, ad-hoc signed Mews preview builds for trusted
 testers. It is not the stable distribution.
 
 ```bash
-brew install --cask duan-jm/mews-preview/mews@dev
+brew install --cask duan-jm/mews-preview/mews-friend-preview
 
 # Review the source and release checksum before explicitly trusting the app.
 xattr -dr com.apple.quarantine /Applications/Mews.app
@@ -18,7 +18,7 @@ Upgrade:
 
 ```bash
 mw stop
-brew upgrade --cask duan-jm/mews-preview/mews@dev
+brew upgrade --cask duan-jm/mews-preview/mews-friend-preview
 xattr -dr com.apple.quarantine /Applications/Mews.app
 mw start
 ```
@@ -27,7 +27,7 @@ Uninstall:
 
 ```bash
 mw undo
-brew uninstall --cask duan-jm/mews-preview/mews@dev
+brew uninstall --cask duan-jm/mews-preview/mews-friend-preview
 ```
 
 Release source and checksums are available from the

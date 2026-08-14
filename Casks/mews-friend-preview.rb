@@ -1,4 +1,4 @@
-cask "mews@dev" do
+cask "mews-friend-preview" do
   version "0.0.1-dev.1"
   sha256 "16dce3b06b38ea922939a98ffa34b16837e4f5bd51acfde93b6613db9a723b21"
 
@@ -25,6 +25,6 @@ cask "mews@dev" do
 
     Before removing Mews, restore agent configuration:
       mw undo
-      brew uninstall --cask mews@dev
+      brew uninstall --cask mews-friend-preview
   EOS
 end
