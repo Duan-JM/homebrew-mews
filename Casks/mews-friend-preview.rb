@@ -1,8 +1,8 @@
 cask "mews-friend-preview" do
-  version "0.0.1-dev.1"
-  sha256 "16dce3b06b38ea922939a98ffa34b16837e4f5bd51acfde93b6613db9a723b21"
+  version "0.0.1-dev.2"
+  sha256 "73fd1257fd6f0a8d11487d196a77495967bd905768bc87b3faffaf114ec9f507"
 
-  url "https://github.com/Duan-JM/Mews/releases/download/v0.0.1-dev.1/mews-v0.0.1-dev.1-darwin.tar.gz"
+  url "https://github.com/Duan-JM/Mews/releases/download/v0.0.1-dev.2/mews-v0.0.1-dev.2-darwin.tar.gz"
   name "Mews"
   desc "Local companion for terminal AI agents"
   homepage "https://github.com/Duan-JM/Mews"
