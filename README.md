@@ -1,12 +1,9 @@
-# Mews Friend Preview Tap
+# Mews Homebrew Tap
 
-This tap contains unnotarized, ad-hoc signed Mews preview builds for trusted
-testers. It is not the stable distribution.
+Install the current public preflight:
 
 ```bash
-brew install --cask duan-jm/mews-preview/mews-friend-preview
-
-# Review the source and release checksum before explicitly trusting the app.
+brew install --cask duan-jm/mews/mews
 xattr -dr com.apple.quarantine /Applications/Mews.app
 
 mw setup
@@ -18,7 +15,8 @@ Upgrade:
 
 ```bash
 mw stop
-brew upgrade --cask duan-jm/mews-preview/mews-friend-preview
+brew update
+brew upgrade --cask mews
 xattr -dr com.apple.quarantine /Applications/Mews.app
 mw start
 ```
@@ -27,8 +25,9 @@ Uninstall:
 
 ```bash
 mw undo
-brew uninstall --cask duan-jm/mews-preview/mews-friend-preview
+brew uninstall --cask mews
 ```
 
-Release source and checksums are available from the
-[Mews prerelease page](https://github.com/Duan-JM/Mews/releases/tag/v0.0.1-dev.1).
+Mews preflight builds are ad-hoc signed. Review the matching
+[GitHub Release](https://github.com/Duan-JM/Mews/releases) and checksum before
+removing quarantine.

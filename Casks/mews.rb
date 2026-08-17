@@ -1,4 +1,4 @@
-cask "mews-friend-preview" do
+cask "mews" do
   version "0.0.1-dev.2"
   sha256 "73fd1257fd6f0a8d11487d196a77495967bd905768bc87b3faffaf114ec9f507"
 
@@ -13,8 +13,7 @@ cask "mews-friend-preview" do
   binary "#{appdir}/Mews.app/Contents/Resources/mw", target: "mw"
 
   caveats <<~EOS
-    This friend preview is ad-hoc signed and is not a notarized stable release.
-    After reviewing and installing it, explicitly allow the local app:
+    This is an ad-hoc signed preflight build. After every install or upgrade:
       xattr -dr com.apple.quarantine /Applications/Mews.app
 
     Mews does not modify agent configuration during Homebrew installation.
@@ -25,6 +24,6 @@ cask "mews-friend-preview" do
 
     Before removing Mews, restore agent configuration:
       mw undo
-      brew uninstall --cask mews-friend-preview
+      brew uninstall --cask mews
   EOS
 end
