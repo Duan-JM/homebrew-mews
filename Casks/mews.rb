@@ -2,7 +2,7 @@ cask "mews" do
   version "0.0.1-dev.2"
   sha256 "73fd1257fd6f0a8d11487d196a77495967bd905768bc87b3faffaf114ec9f507"
 
-  url "https://github.com/Duan-JM/Mews/releases/download/v0.0.1-dev.2/mews-v0.0.1-dev.2-darwin.tar.gz"
+  url "https://github.com/Duan-JM/Mews/releases/download/v#{version}/mews-v#{version}-darwin.tar.gz"
   name "Mews"
   desc "Local companion for terminal AI agents"
   homepage "https://github.com/Duan-JM/Mews"
