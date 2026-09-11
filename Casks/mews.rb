@@ -1,6 +1,6 @@
 cask "mews" do
-  version "0.0.3"
-  sha256 "f75656ca0e7ce37188fab90eaecd9972b0f5fcb3a03ddfb5c3d1f744f37a15e8"
+  version "0.0.4"
+  sha256 "c8c52dec0dbec8b8d91cfa08b639ccf34c4ab8b147b05c58cbe20ab86c489c25"
 
   url "https://github.com/Duan-JM/Mews/releases/download/v#{version}/mews-v#{version}-darwin.tar.gz"
   name "Mews"
